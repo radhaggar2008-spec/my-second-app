@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Home",
+  "description": "An elegant home settling and room planning application featuring interactive checklists, room design tools, bento grid layout guides, and safety trackers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
