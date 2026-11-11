@@ -15,14 +15,14 @@ export function ProfileView({ onExportData, onResetData }: ProfileViewProps) {
       {/* Profile Header */}
       <div className="sleek-card p-6 md:p-8 flex flex-col md:flex-row items-center gap-6">
         <div className="w-20 h-20 rounded-2xl bg-indigo-50 border border-indigo-200 flex items-center justify-center text-indigo-600 font-display-lg text-2xl font-bold shrink-0 shadow-2xs">
-          SJ
+          RA
         </div>
         <div className="text-center md:text-left space-y-1 flex-grow">
           <span className="inline-block bg-indigo-50 border border-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">
             PRIMARY HOMEOWNER
           </span>
           <h2 className="font-headline-lg text-2xl md:text-3xl text-slate-900 font-bold">
-            Sarah Jenkins
+            Radhika
           </h2>
           <p className="font-body-md text-xs md:text-sm text-slate-500">
             142 Maplewood Avenue • 4 Bed, 3 Bath • Settled April 2026

@@ -1,4 +1,5 @@
 import { ActiveTab, EssentialItem, RoomCardData } from '../types';
+import { D3EssentialsProgressBar } from './D3EssentialsProgressBar';
 
 interface DashboardViewProps {
   onTabChange: (tab: ActiveTab) => void;
@@ -41,7 +42,7 @@ export function DashboardView({
             System Dashboard
           </div>
           <h2 className="font-display-lg text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
-            Welcome Home, Sarah.
+            Welcome Home, Radhika.
           </h2>
           <p className="font-body-lg text-slate-600 max-w-2xl text-base">
             Your settling journey is well underway. We've organized your essentials and room planners to help you find your rhythm in the new space.
@@ -108,6 +109,13 @@ export function DashboardView({
                 {completedCount}/{day1Essentials.length}
               </span>
             </div>
+
+            {/* D3.js Essentials Checklist Progress Bar */}
+            <D3EssentialsProgressBar
+              completedCount={completedCount}
+              totalCount={day1Essentials.length}
+              percentage={essentialsPercentage}
+            />
 
             <ul className="space-y-2.5">
               {day1Essentials.map((item) => (
